@@ -1,0 +1,1410 @@
+name: UI_Project
+version: 2
+projectReferences: 
+  - /BeforeDemo
+  - /Emerald-UI-Tests
+  - /RFT_Project
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /UI_Project/src
+        type: javaClasspath
+  - name: 20250408_Poste.recdata
+  - name: 20250408_Poste.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /UI_Project/20250408_Poste.recdata
+        type: recsessionRecdata
+  - name: 20250408_Poste.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F01461ED5CF1C0CBBDB73265633536
+    dependencies: 
+      - path: /Emerald-UI-Tests/hclsofy_com_727.ma
+        type: test#moeb.applicationPackage
+      - path: /UI_Project/20250408_Poste.recsession
+        type: testRecsession
+  - name: 58_ddns_net_6d4.ma
+    type: moeb.applicationPackage
+  - name: CP_ApiWeb.testsuite
+    type: com.ibm.rational.test.lt.scenario
+    version: 11.0.5.0
+    properties: 
+      description: 'Test(s): 
+
+	DiningFromApi
+
+'
+      name: CP_ApiWeb
+      type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
+      uid: A1EFCD0BD3E6FE40D4BAB06530363233
+    dependencies: 
+      - path: /UI_Project/DiningFromApi.testsuite
+        type: scheduleInvokedTest
+  - name: CP_Prova.testsuite
+    type: com.ibm.rational.test.lt.scenario
+    version: 11.0.5.0
+    properties: 
+      description: 'Test(s): 
+
+'
+      name: CP_Prova
+      type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
+      uid: A1EFCD1181143CE0FC67B83965636664
+    dependencies: 
+      - path: /RFT_Project/ClassicsCD.testsuite
+        type: scheduleInvokedTest
+  - name: DS_FirstDataGeneration.csv
+    type: com.ibm.rational.test.lt.datapool
+    dependencies: 
+      - path: /UI_Project/DS_FirstDataGeneration.csv.metadata
+        type: datasetMetadata
+  - name: DS_FirstDataGeneration.csv.metadata
+  - name: DS_ForDemo.csv
+    type: com.ibm.rational.test.lt.datapool
+    dependencies: 
+      - path: /UI_Project/DS_ForDemo.csv.metadata
+        type: datasetMetadata
+  - name: DS_ForDemo.csv.metadata
+  - name: DiningFromApi.recdata
+  - name: DiningFromApi.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /UI_Project/DiningFromApi.recdata
+        type: recsessionRecdata
+  - name: DiningFromApi.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EFCCE3EE6CE090E16BB33235363262
+    dependencies: 
+      - path: /Emerald-UI-Tests/hclsofy_com_727.ma
+        type: test#moeb.applicationPackage
+      - path: /UI_Project/DiningFromApi.recsession
+        type: testRecsession
+  - name: Fleet.recdata
+  - name: Fleet.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /UI_Project/Fleet.recdata
+        type: recsessionRecdata
+  - name: Fleet.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F071F76BFF0020CA3CB13539653563
+    dependencies: 
+      - path: /UI_Project/Fleet.recsession
+        type: testRecsession
+      - path: /UI_Project/eetfeet_com_bd2.ma
+        type: test#moeb.applicationPackage
+  - name: Healing.recdata
+  - name: Healing.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /UI_Project/Healing.recdata
+        type: recsessionRecdata
+  - name: Healing.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EFCE596843597BD486B96239343433
+    dependencies: 
+      - path: /Emerald-UI-Tests/hclsofy_com_727.ma
+        type: test#moeb.applicationPackage
+      - path: /UI_Project/Healing.recsession
+        type: testRecsession
+  - name: Jitendra.testsuite
+    missing: true
+  - name: Jitendra_1749203311865.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749203311865
+      tags: 
+      testId: A1F042BB5CE42AE0F0A9E13064373764
+      testName: Jitendra
+    dependencies: 
+      - path: /UI_Project/Jitendra_1749203311865.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/Jitendra_1749203311865_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/Jitendra_1749203311865_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/Jitendra_1749203311865_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/Jitendra_1749203311865_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/Jitendra_1749203323147.executiondlr
+        type: statsSessionAsset
+  - name: Jitendra_1749203311865.xmoebreport
+  - name: Jitendra_1749203311865_orch!system.mstats
+  - name: Jitendra_1749203311865_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Jitendra_1749203311865_perf!localhost.mstats
+  - name: Jitendra_1749203311865_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Jitendra_1749203323147.executiondlr
+  - name: PassaggioVar1.recdata
+  - name: PassaggioVar1.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /UI_Project/PassaggioVar1.recdata
+        type: recsessionRecdata
+  - name: PassaggioVar1.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EFA65894695A80C5F3B03333356632
+    dependencies: 
+      - path: /Emerald-UI-Tests/hclsofy_com_727.ma
+        type: test#moeb.applicationPackage
+      - path: /UI_Project/PassaggioVar1.recsession
+        type: testRecsession
+  - name: PassaggioVar2.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EFA658A5F9A98DC5F3B03333356632
+    dependencies: 
+      - path: /Emerald-UI-Tests/hclsofy_com_727.ma
+        type: test#moeb.applicationPackage
+      - path: /UI_Project/PassaggioVar1.recsession
+        type: testRecsession
+  - name: PizzaApp.recdata
+  - name: PizzaApp.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /UI_Project/PizzaApp.recdata
+        type: recsessionRecdata
+  - name: PizzaApp.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F044FDB9EFF1D0DD9CE33561376132
+    dependencies: 
+      - path: /UI_Project/PizzaApp.recsession
+        type: testRecsession
+      - path: /UI_Project/eb_AppPizza_376.ma
+        type: test#moeb.applicationPackage
+  - name: PizzaApp_1749192533090.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749192533090
+      tags: 
+      testId: A1F042A224434950C8AAB73436663039
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749192533090.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749192533090_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749192533090_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749192533090_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749192533090_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749192545920.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749192533090.xmoebreport
+  - name: PizzaApp_1749192533090_orch!system.mstats
+  - name: PizzaApp_1749192533090_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749192533090_perf!localhost.mstats
+  - name: PizzaApp_1749192533090_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749192545920.executiondlr
+  - name: PizzaApp_1749193092606.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749193092606
+      tags: 
+      testId: A1F042A36A66A660F0A9E13064373764
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749193092606.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749193092606_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749193092606_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749193092606_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749193092606_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749193104507.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749193092606.xmoebreport
+  - name: PizzaApp_1749193092606_orch!system.mstats
+  - name: PizzaApp_1749193092606_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749193092606_perf!localhost.mstats
+  - name: PizzaApp_1749193092606_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749193104507.executiondlr
+  - name: PizzaApp_1749193202332.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749193202332
+      tags: 
+      testId: A1F042A36A66A660F0A9E13064373764
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749193202332.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749193202332_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749193202332_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749193202332_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749193202332_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749193213748.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749193202332.xmoebreport
+  - name: PizzaApp_1749193202332_orch!system.mstats
+  - name: PizzaApp_1749193202332_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749193202332_perf!localhost.mstats
+  - name: PizzaApp_1749193202332_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749193213748.executiondlr
+  - name: PizzaApp_1749193359454.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749193359454
+      tags: 
+      testId: A1F042A36A66A660F0A9E13064373764
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749193359454.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749193359454_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749193359454_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749193359454_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749193359454_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749193370725.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749193359454.xmoebreport
+  - name: PizzaApp_1749193359454_orch!system.mstats
+  - name: PizzaApp_1749193359454_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749193359454_perf!localhost.mstats
+  - name: PizzaApp_1749193359454_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749193370725.executiondlr
+  - name: PizzaApp_1749194886794.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749194886794
+      tags: 
+      testId: A1F042A36A66A660F0A9E13064373764
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749194886794.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749194886794_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749194886794_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749194886794_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749194886794_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749194899100.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749194886794.xmoebreport
+  - name: PizzaApp_1749194886794_orch!system.mstats
+  - name: PizzaApp_1749194886794_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749194886794_perf!localhost.mstats
+  - name: PizzaApp_1749194886794_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749194899100.executiondlr
+  - name: PizzaApp_1749195190861.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749195190861
+      tags: 
+      testId: A1F042A36A66A660F0A9E13064373764
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749195190861.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749195190861_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749195190861_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749195190861_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749195190861_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749195203094.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749195190861.xmoebreport
+  - name: PizzaApp_1749195190861_orch!system.mstats
+  - name: PizzaApp_1749195190861_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749195190861_perf!localhost.mstats
+  - name: PizzaApp_1749195190861_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749195203094.executiondlr
+  - name: PizzaApp_1749195359951.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749195359951
+      tags: 
+      testId: A1F042A36A66A660F0A9E13064373764
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749195359951.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749195359951_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749195359951_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749195359951_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749195359951_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749195372163.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749195359951.xmoebreport
+  - name: PizzaApp_1749195359951_orch!system.mstats
+  - name: PizzaApp_1749195359951_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749195359951_perf!localhost.mstats
+  - name: PizzaApp_1749195359951_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749195372163.executiondlr
+  - name: PizzaApp_1749196137128.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749196137128
+      tags: 
+      testId: A1F042A36A66A660F0A9E13064373764
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749196137128.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749196137128_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749196137128_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749196137128_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749196137128_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749196148416.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749196137128.xmoebreport
+  - name: PizzaApp_1749196137128_orch!system.mstats
+  - name: PizzaApp_1749196137128_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749196137128_perf!localhost.mstats
+  - name: PizzaApp_1749196137128_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749196148416.executiondlr
+  - name: PizzaApp_1749196734350.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749196734350
+      tags: 
+      testId: A1F042A36A66A660F0A9E13064373764
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749196734350.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749196734350_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749196734350_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749196734350_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749196734350_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749196745613.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749196734350.xmoebreport
+  - name: PizzaApp_1749196734350_orch!system.mstats
+  - name: PizzaApp_1749196734350_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749196734350_perf!localhost.mstats
+  - name: PizzaApp_1749196734350_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749196745613.executiondlr
+  - name: PizzaApp_1749199730023.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749199730023
+      tags: 
+      testId: A1F042A36A66A660F0A9E13064373764
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749199730023.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749199730023_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749199730023_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749199730023_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749199730023_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749199740128.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749199730023.xmoebreport
+  - name: PizzaApp_1749199730023_orch!system.mstats
+  - name: PizzaApp_1749199730023_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749199730023_perf!localhost.mstats
+  - name: PizzaApp_1749199730023_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749199740128.executiondlr
+  - name: PizzaApp_1749200328001.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749200328001
+      tags: 
+      testId: A1F042A36A66A660F0A9E13064373764
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749200328001.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749200328001_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749200328001_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749200328001_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749200328001_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749200339305.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749200328001.xmoebreport
+  - name: PizzaApp_1749200328001_orch!system.mstats
+  - name: PizzaApp_1749200328001_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749200328001_perf!localhost.mstats
+  - name: PizzaApp_1749200328001_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749200339305.executiondlr
+  - name: PizzaApp_1749449734547.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749449734547
+      tags: 
+      testId: A1F042A36A66A660F0A9E13064373764
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749449734547.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749449734547_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749449734547_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749449734547_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749449734547_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749449747431.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749449734547.xmoebreport
+  - name: PizzaApp_1749449734547_orch!system.mstats
+  - name: PizzaApp_1749449734547_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749449734547_perf!localhost.mstats
+  - name: PizzaApp_1749449734547_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749449747431.executiondlr
+  - name: PizzaApp_1749449890579.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749449890579
+      tags: 
+      testId: A1F042A36A66A660F0A9E13064373764
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749449890579.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749449890579_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749449890579_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749449890579_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749449890579_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749449902590.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749449890579.xmoebreport
+  - name: PizzaApp_1749449890579_orch!system.mstats
+  - name: PizzaApp_1749449890579_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749449890579_perf!localhost.mstats
+  - name: PizzaApp_1749449890579_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749449902590.executiondlr
+  - name: PizzaApp_1749449968095.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749449968095
+      tags: 
+      testId: A1F042A36A66A660F0A9E13064373764
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749449968095.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749449968095_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749449968095_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749449968095_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749449968095_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749449979605.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749449968095.xmoebreport
+  - name: PizzaApp_1749449968095_orch!system.mstats
+  - name: PizzaApp_1749449968095_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749449968095_perf!localhost.mstats
+  - name: PizzaApp_1749449968095_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749449979605.executiondlr
+  - name: PizzaApp_1749451788773.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749451788773
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749451788773.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749451788773_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749451788773_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749451788773_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749451788773_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749451800057.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749451788773.xmoebreport
+  - name: PizzaApp_1749451788773_orch!system.mstats
+  - name: PizzaApp_1749451788773_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749451788773_perf!localhost.mstats
+  - name: PizzaApp_1749451788773_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749451800057.executiondlr
+  - name: PizzaApp_1749451893885.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749451893885
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749451893885.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749451893885_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749451893885_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749451893885_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749451893885_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749451905219.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749451893885.xmoebreport
+  - name: PizzaApp_1749451893885_orch!system.mstats
+  - name: PizzaApp_1749451893885_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749451893885_perf!localhost.mstats
+  - name: PizzaApp_1749451893885_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749451905219.executiondlr
+  - name: PizzaApp_1749452061544.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749452061544
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749452061544.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749452061544_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452061544_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452061544_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452061544_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452072855.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749452061544.xmoebreport
+  - name: PizzaApp_1749452061544_orch!system.mstats
+  - name: PizzaApp_1749452061544_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749452061544_perf!localhost.mstats
+  - name: PizzaApp_1749452061544_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749452072855.executiondlr
+  - name: PizzaApp_1749452304218.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749452304218
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749452304218.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749452304218_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452304218_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452304218_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452304218_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452315585.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749452304218.xmoebreport
+  - name: PizzaApp_1749452304218_orch!system.mstats
+  - name: PizzaApp_1749452304218_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749452304218_perf!localhost.mstats
+  - name: PizzaApp_1749452304218_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749452315585.executiondlr
+  - name: PizzaApp_1749452393121.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749452393121
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749452393121.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749452393121_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452393121_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452393121_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452393121_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452404401.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749452393121.xmoebreport
+  - name: PizzaApp_1749452393121_orch!system.mstats
+  - name: PizzaApp_1749452393121_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749452393121_perf!localhost.mstats
+  - name: PizzaApp_1749452393121_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749452404401.executiondlr
+  - name: PizzaApp_1749452493640.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749452493640
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749452493640.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749452493640_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452493640_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452493640_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452493640_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749452504947.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749452493640.xmoebreport
+  - name: PizzaApp_1749452493640_orch!system.mstats
+  - name: PizzaApp_1749452493640_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749452493640_perf!localhost.mstats
+  - name: PizzaApp_1749452493640_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749452504947.executiondlr
+  - name: PizzaApp_1749543899967.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749543899967
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749543899967.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749543899967_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749543899967_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749543899967_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749543899967_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749543911505.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749543899967.xmoebreport
+  - name: PizzaApp_1749543899967_orch!system.mstats
+  - name: PizzaApp_1749543899967_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749543899967_perf!localhost.mstats
+  - name: PizzaApp_1749543899967_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749543911505.executiondlr
+  - name: PizzaApp_1749545286085.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749545286085
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749545286085.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749545286085_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545286085_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545286085_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545286085_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545298336.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749545286085.xmoebreport
+  - name: PizzaApp_1749545286085_orch!system.mstats
+  - name: PizzaApp_1749545286085_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749545286085_perf!localhost.mstats
+  - name: PizzaApp_1749545286085_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749545298336.executiondlr
+  - name: PizzaApp_1749545472547.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749545472547
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749545472547.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749545472547_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545472547_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545472547_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545472547_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545484871.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749545472547.xmoebreport
+  - name: PizzaApp_1749545472547_orch!system.mstats
+  - name: PizzaApp_1749545472547_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749545472547_perf!localhost.mstats
+  - name: PizzaApp_1749545472547_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749545484871.executiondlr
+  - name: PizzaApp_1749545561250.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749545561250
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749545561250.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749545561250_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545561250_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545561250_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545561250_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545572490.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749545561250.xmoebreport
+  - name: PizzaApp_1749545561250_orch!system.mstats
+  - name: PizzaApp_1749545561250_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749545561250_perf!localhost.mstats
+  - name: PizzaApp_1749545561250_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749545572490.executiondlr
+  - name: PizzaApp_1749545690180.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749545690180
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749545690180.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749545690180_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545690180_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545690180_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545690180_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749545702445.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749545690180.xmoebreport
+  - name: PizzaApp_1749545690180_orch!system.mstats
+  - name: PizzaApp_1749545690180_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749545690180_perf!localhost.mstats
+  - name: PizzaApp_1749545690180_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749545702445.executiondlr
+  - name: PizzaApp_1749549473131.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749549473131
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749549473131.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749549473131_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749549473131_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749549473131_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749549473131_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749549484690.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749549473131.xmoebreport
+  - name: PizzaApp_1749549473131_orch!system.mstats
+  - name: PizzaApp_1749549473131_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749549473131_perf!localhost.mstats
+  - name: PizzaApp_1749549473131_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749549484690.executiondlr
+  - name: PizzaApp_1749549742858.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749549742858
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749549742858.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749549742858_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749549742858_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749549742858_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749549742858_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749549754345.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749549742858.xmoebreport
+  - name: PizzaApp_1749549742858_orch!system.mstats
+  - name: PizzaApp_1749549742858_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749549742858_perf!localhost.mstats
+  - name: PizzaApp_1749549742858_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749549754345.executiondlr
+  - name: PizzaApp_1749549878455.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749549878455
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749549878455.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749549878455_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749549878455_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749549878455_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749549878455_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749549889721.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749549878455.xmoebreport
+  - name: PizzaApp_1749549878455_orch!system.mstats
+  - name: PizzaApp_1749549878455_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749549878455_perf!localhost.mstats
+  - name: PizzaApp_1749549878455_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749549889721.executiondlr
+  - name: PizzaApp_1749550003803.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1749550003803
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1749550003803.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1749550003803_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749550003803_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749550003803_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749550003803_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1749550015080.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1749550003803.xmoebreport
+  - name: PizzaApp_1749550003803_orch!system.mstats
+  - name: PizzaApp_1749550003803_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749550003803_perf!localhost.mstats
+  - name: PizzaApp_1749550003803_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1749550015080.executiondlr
+  - name: PizzaApp_1758115881999.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1758115881999
+      tags: 
+      testId: A1F044FDB9EFF1D0DD9CE33561376132
+      testName: PizzaApp
+    dependencies: 
+      - path: /UI_Project/PizzaApp.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/PizzaApp_1758115881999.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/PizzaApp_1758115881999_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1758115881999_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1758115881999_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1758115881999_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/PizzaApp_1758115893394.executiondlr
+        type: statsSessionAsset
+  - name: PizzaApp_1758115881999.xmoebreport
+  - name: PizzaApp_1758115881999_orch!system.mstats
+  - name: PizzaApp_1758115881999_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1758115881999_perf!localhost.mstats
+  - name: PizzaApp_1758115881999_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: PizzaApp_1758115893394.executiondlr
+  - name: SimpleDS_Usage.recdata
+  - name: SimpleDS_Usage.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /UI_Project/SimpleDS_Usage.recdata
+        type: recsessionRecdata
+  - name: SimpleDS_Usage.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EF818F09F8EE30F3F5B56533643537
+    dependencies: 
+      - path: /Emerald-UI-Tests/hclsofy_com_727.ma
+        type: test#moeb.applicationPackage
+      - path: /UI_Project/DS_ForDemo.csv
+        type: testDatapool
+      - path: /UI_Project/SimpleDS_Usage.recsession
+        type: testRecsession
+  - name: SimpleDS_withVar.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EF8198CA542920FC48B46537663964
+    dependencies: 
+      - path: /Emerald-UI-Tests/hclsofy_com_727.ma
+        type: test#moeb.applicationPackage
+      - path: /UI_Project/DS_ForDemo.csv
+        type: testDatapool
+      - path: /UI_Project/SimpleDS_Usage.recsession
+        type: testRecsession
+  - name: Web_localhost.ma
+    type: moeb.applicationPackage
+  - name: eb_AppPizza_376.ma
+    type: moeb.applicationPackage
+  - name: eetfeet_com_bd2.ma
+    type: moeb.applicationPackage
+  - name: resort.recdata
+  - name: resort.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /UI_Project/resort.recdata
+        type: recsessionRecdata
+  - name: resort.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F071F4E7A6E9C0CA3CB13539653563
+    dependencies: 
+      - path: /UI_Project/Web_localhost.ma
+        type: test#moeb.applicationPackage
+      - path: /UI_Project/resort.recsession
+        type: testRecsession
+  - name: resort1.recdata
+  - name: resort1.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /UI_Project/resort1.recdata
+        type: recsessionRecdata
+  - name: resort1.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F071F5C3DE5720CA3CB13539653563
+    dependencies: 
+      - path: /UI_Project/Web_localhost.ma
+        type: test#moeb.applicationPackage
+      - path: /UI_Project/resort1.recsession
+        type: testRecsession
+  - name: resort1_1754396103325.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1754396103325
+      tags: 
+      testId: A1F071F5C3DE5720CA3CB13539653563
+      testName: resort1
+    dependencies: 
+      - path: /UI_Project/resort1.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/resort1_1754396103325.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/resort1_1754396103325_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754396103325_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754396103325_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754396103325_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754396114668.executiondlr
+        type: statsSessionAsset
+  - name: resort1_1754396103325.xmoebreport
+  - name: resort1_1754396103325_orch!system.mstats
+  - name: resort1_1754396103325_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: resort1_1754396103325_perf!localhost.mstats
+  - name: resort1_1754396103325_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: resort1_1754396114668.executiondlr
+  - name: resort1_1754396242228.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1754396242228
+      tags: 
+      testId: A1F071F5C3DE5720CA3CB13539653563
+      testName: resort1
+    dependencies: 
+      - path: /UI_Project/resort1.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/resort1_1754396242228.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/resort1_1754396242228_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754396242228_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754396242228_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754396242228_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754396253520.executiondlr
+        type: statsSessionAsset
+  - name: resort1_1754396242228.xmoebreport
+  - name: resort1_1754396242228_orch!system.mstats
+  - name: resort1_1754396242228_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: resort1_1754396242228_perf!localhost.mstats
+  - name: resort1_1754396242228_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: resort1_1754396253520.executiondlr
+  - name: resort1_1754482333116.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1754482333116
+      tags: 
+      testId: A1F071F5C3DE5720CA3CB13539653563
+      testName: resort1
+    dependencies: 
+      - path: /UI_Project/resort1.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/resort1_1754482333116.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/resort1_1754482333116_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754482333116_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754482333116_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754482333116_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754482346066.executiondlr
+        type: statsSessionAsset
+  - name: resort1_1754482333116.xmoebreport
+  - name: resort1_1754482333116_orch!system.mstats
+  - name: resort1_1754482333116_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: resort1_1754482333116_perf!localhost.mstats
+  - name: resort1_1754482333116_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: resort1_1754482346066.executiondlr
+  - name: resort1_1754482421418.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1754482421418
+      tags: 
+      testId: A1F071F5C3DE5720CA3CB13539653563
+      testName: resort1
+    dependencies: 
+      - path: /UI_Project/resort1.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/resort1_1754482421418.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/resort1_1754482421418_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754482421418_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754482421418_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754482421418_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/resort1_1754482432782.executiondlr
+        type: statsSessionAsset
+  - name: resort1_1754482421418.xmoebreport
+  - name: resort1_1754482421418_orch!system.mstats
+  - name: resort1_1754482421418_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: resort1_1754482421418_perf!localhost.mstats
+  - name: resort1_1754482421418_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: resort1_1754482432782.executiondlr
+  - name: resort_1754395831674.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1754395831674
+      tags: 
+      testId: A1F071F4E7A6E9C0CA3CB13539653563
+      testName: resort
+    dependencies: 
+      - path: /UI_Project/resort.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/resort_1754395831674.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/resort_1754395831674_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/resort_1754395831674_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/resort_1754395831674_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/resort_1754395831674_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/resort_1754395844205.executiondlr
+        type: statsSessionAsset
+  - name: resort_1754395831674.xmoebreport
+  - name: resort_1754395831674_orch!system.mstats
+  - name: resort_1754395831674_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: resort_1754395831674_perf!localhost.mstats
+  - name: resort_1754395831674_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: resort_1754395844205.executiondlr
+  - name: src
+    resources: 
+  - name: test.recdata
+  - name: test.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /UI_Project/test.recdata
+        type: recsessionRecdata
+  - name: test.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F04C1880C7CFF0F3AAB56463336165
+    dependencies: 
+      - path: /BeforeDemo/ng_instance_166.ma
+        type: test#moeb.applicationPackage
+      - path: /UI_Project/test.recsession
+        type: testRecsession
+  - name: test_1750232902614.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1750232902614
+      tags: 
+      testId: A1F04C188F8C2D60F3AAB56463336165
+      testName: test
+    dependencies: 
+      - path: /UI_Project/test.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/test_1750232902614.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/test_1750232902614_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/test_1750232902614_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/test_1750232902614_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/test_1750232902614_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/test_1750232954357.executiondlr
+        type: statsSessionAsset
+  - name: test_1750232902614.xmoebreport
+  - name: test_1750232902614_orch!system.mstats
+  - name: test_1750232902614_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: test_1750232902614_perf!localhost.mstats
+  - name: test_1750232902614_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: test_1750232954357.executiondlr
+  - name: test_1750233106793.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1750233106793
+      tags: 
+      testId: A1F04C191494E100F3AAB56463336165
+      testName: test
+    dependencies: 
+      - path: /UI_Project/test.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/test_1750233106793.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/test_1750233106793_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/test_1750233106793_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/test_1750233106793_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/test_1750233106793_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/test_1750233135127.executiondlr
+        type: statsSessionAsset
+  - name: test_1750233106793.xmoebreport
+  - name: test_1750233106793_orch!system.mstats
+  - name: test_1750233106793_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: test_1750233106793_perf!localhost.mstats
+  - name: test_1750233106793_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: test_1750233135127.executiondlr

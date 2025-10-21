@@ -1,0 +1,142 @@
+name: Perf_Project
+version: 2
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /Perf_Project/src
+        type: javaClasspath
+  - name: 20240125_Sched.testsuite
+    type: com.ibm.rational.test.lt.scenario
+    version: 11.0.6.0
+    properties: 
+      description: 'Test(s): 
+
+'
+      name: 20240125_Sched
+      type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
+      uid: A1EEBB8D80BDF6A0F52FE66136666133
+  - name: 202501018_BuyBedAsGuest.recdata
+  - name: 202501018_BuyBedAsGuest.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /Perf_Project/202501018_BuyBedAsGuest.recdata
+        type: recsessionRecdata
+  - name: 202501018_BuyBedAsGuest.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.6.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.http'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EFCDD0D7594C20F35EE46339316662
+    dependencies: 
+      - path: /Perf_Project/202501018_BuyBedAsGuest.recsession
+        type: testRecsession
+  - name: 20250108_BathSearch.recdata
+  - name: 20250108_BathSearch.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /Perf_Project/20250108_BathSearch.recdata
+        type: recsessionRecdata
+  - name: 20250108_BathSearch.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.6.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.http'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EFCDCDBE745720C5B9B66361363931
+    dependencies: 
+      - path: /Perf_Project/20250108_BathSearch.recsession
+        type: testRecsession
+  - name: 20250108_BathUI.recdata
+  - name: 20250108_BathUI.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /Perf_Project/20250108_BathUI.recdata
+        type: recsessionRecdata
+  - name: 20250108_DiningSearch.recdata
+  - name: 20250108_DiningSearch.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /Perf_Project/20250108_DiningSearch.recdata
+        type: recsessionRecdata
+  - name: 20250108_DiningSearch.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.6.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.http'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EFCDCEBADB5C70DDF0B23765343835
+    dependencies: 
+      - path: /Perf_Project/20250108_DiningSearch.recsession
+        type: testRecsession
+  - name: 20250108_Sched.testsuite
+    type: com.ibm.rational.test.lt.schedule
+    version: 11.0.6.0
+    properties: 
+      description: 'Stages:
+
+	users=5; duration=5 minutes
+
+	users=10; duration=5 minutes
+
+Navigate: Group Size 80.0 percent
+
+	Test(s): 20250108_BathSearch,20250108_DiningSearch
+
+Buy: Group Size 20.0 percent
+
+	Test(s): 202501018_BuyBedAsGuest
+
+'
+      name: 20250108_Sched
+      type: com.ibm.rational.test.common.schedule.Schedule
+      uid: A1EEB94271C59BA0C375E33030626134
+    dependencies: 
+      - path: /Perf_Project/202501018_BuyBedAsGuest.testsuite
+        type: scheduleInvokedTest
+      - path: /Perf_Project/20250108_BathSearch.testsuite
+        type: scheduleInvokedTest
+      - path: /Perf_Project/20250108_DiningSearch.testsuite
+        type: scheduleInvokedTest
+  - name: AllTests_Google(2).testsuite
+    type: com.ibm.rational.test.lt.scenario
+    version: 11.0.6.0
+    properties: 
+      description: 'Test(s): 
+
+'
+      name: AllTests_Google(2)
+      type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
+      uid: A1EEB6D0F7D94C10EE75B16531353134
+  - name: AllTests_Google.testsuite
+    type: com.ibm.rational.test.lt.scenario
+    version: 11.0.6.0
+    properties: 
+      description: 'Test(s): 
+
+'
+      name: AllTests_Google
+      type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
+      uid: A1EEB6AB86930930CDF5B53439386135
+  - name: AllTests_Split_Google.testsuite
+    type: com.ibm.rational.test.lt.scenario
+    version: 11.0.6.0
+    properties: 
+      description: 'Test(s): 
+
+'
+      name: AllTests_Split_Google
+      type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
+      uid: A1EEB6B9D00E30E0D71EE16264313631
+  - name: DS_Emerald.csv
+    type: com.ibm.rational.test.lt.datapool
+    dependencies: 
+      - path: /Perf_Project/DS_Emerald.csv.metadata
+        type: datasetMetadata
+  - name: DS_Emerald.csv.metadata
+  - name: Sched_Test_1701847522275.htm
+    type: com.ibm.rational.test.lt.html
+  - name: src
+    resources: 

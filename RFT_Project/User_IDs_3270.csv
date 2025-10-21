@@ -1,0 +1,4 @@
+CustomerNumber,FirstName,LastName,DOB,HouseName,HouseNumber,Postcode,Telephone,Mobile,Email
+java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String
+0000000001,Andrew    ,Pandy               ,1950-07-11,                    ,34  ,PI101OO ,01962 811234        ,07799 123456        ,A.Pandy@beebhouse.com      
+0000000002,Scott     ,Tracey              ,1965-09-30,Tracey Island       ,1   ,TB14TV  ,001 911911          ,                    ,stuart@hcl.com

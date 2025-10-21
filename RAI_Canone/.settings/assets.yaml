@@ -1,0 +1,80 @@
+name: RAI_Canone
+version: 2
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /RAI_Canone/src
+        type: javaClasspath
+  - name: CanoneSpeciale.recdata
+  - name: CanoneSpeciale.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /RAI_Canone/CanoneSpeciale.recdata
+        type: recsessionRecdata
+  - name: CanoneSpeciale.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.6.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.http'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EFFFEC7EABD590D57CB93635656262
+    dependencies: 
+      - path: /RAI_Canone/CanoneSpeciale.recsession
+        type: testRecsession
+  - name: CanoneSpeciale_1.recdata
+  - name: CanoneSpeciale_1.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /RAI_Canone/CanoneSpeciale_1.recdata
+        type: recsessionRecdata
+  - name: CanoneSpeciale_1.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.6.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.http'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1EFFFEFF1E7ED70C476B46136313331
+    dependencies: 
+      - path: /RAI_Canone/CanoneSpeciale_1.recsession
+        type: testRecsession
+      - path: /RAI_Canone/DS_CanoneSpeciale.csv
+        type: testDatapool
+  - name: DS_CanoneSpeciale.csv
+    type: com.ibm.rational.test.lt.datapool
+    dependencies: 
+      - path: /RAI_Canone/DS_CanoneSpeciale.csv.metadata
+        type: datasetMetadata
+  - name: DS_CanoneSpeciale.csv.metadata
+  - name: VU_CanoneSpeciale.testsuite
+    type: com.ibm.rational.test.lt.schedule
+    version: 11.0.6.0
+    properties: 
+      description: 'Stages:
+
+	users=5; duration=Run Until Finished
+
+User Group 1: Group Size 100.0 percent
+
+	Test(s): CanoneSpeciale_1
+
+'
+      name: VU_CanoneSpeciale
+      type: com.ibm.rational.test.common.schedule.Schedule
+      uid: A1EFFFF4DA244D50CE0EB73365663136
+    dependencies: 
+      - path: /RAI_Canone/CanoneSpeciale_1.testsuite
+        type: scheduleInvokedTest
+      - path: /RAI_Canone/localhost.location
+        type: scheduleIPOTLocation
+  - name: localhost.location
+    type: com.ibm.rational.test.lt.location
+  - name: speciali1.csv
+    type: com.ibm.rational.test.lt.datapool
+    dependencies: 
+      - path: /RAI_Canone/speciali1.csv.metadata
+        type: datasetMetadata
+  - name: speciali1.csv.metadata
+  - name: src
+    resources: 

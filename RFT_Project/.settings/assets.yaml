@@ -1,0 +1,593 @@
+name: RFT_Project
+projectReferences: 
+resources: 
+  - name: .classpath
+    type: com.ibm.rational.test.lt.classpath
+    dependencies: 
+      - path: /RFT_Project
+        type: javaClasspath
+  - name: .project
+  - name: App_ClassicCD.java
+  - name: App_ClassicCD.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F05B335AF12C20C5C3E43161373164
+    dependencies: 
+      - path: /RFT_Project/.classpath
+        type: FtScriptDependants
+      - path: /RFT_Project/.project
+        type: FtScriptDependants
+      - path: /RFT_Project/App_ClassicCD.java
+        type: FtScriptDependants
+      - path: /RFT_Project/App_ClassicCD.testsuite
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/App_ClassicCD.rftdef
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/App_ClassicCD.rftxmap
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/App_ClassicCDHelper.java
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+  - name: CD_InsertOrder.java
+  - name: CD_InsertOrder.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F05B335B25F7C0C5C3E43161373164
+    dependencies: 
+      - path: /RFT_Project/.classpath
+        type: FtScriptDependants
+      - path: /RFT_Project/.project
+        type: FtScriptDependants
+      - path: /RFT_Project/CD_InsertOrder.java
+        type: FtScriptDependants
+      - path: /RFT_Project/CD_InsertOrder.testsuite
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_InsertOrder.Item_text.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_InsertOrder.YourOrderHasBeenReceivedYourOr_text.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_InsertOrder.csv
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_InsertOrder.csv.metadata
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_InsertOrder.rftdef
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_InsertOrder.rftxmap
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_InsertOrderHelper.java
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+  - name: CD_Logon.java
+  - name: CD_Logon.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F05B335B2D23F9C5C3E43161373164
+    dependencies: 
+      - path: /RFT_Project/.classpath
+        type: FtScriptDependants
+      - path: /RFT_Project/.project
+        type: FtScriptDependants
+      - path: /RFT_Project/CD_Logon.java
+        type: FtScriptDependants
+      - path: /RFT_Project/CD_Logon.testsuite
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_Logon.ExistingCustomer_state.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_Logon.csv
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_Logon.csv.metadata
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_Logon.rftdef
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_Logon.rftxmap
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_LogonHelper.java
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+  - name: CD_StartAppA.java
+  - name: CD_StartAppA.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.5.0
+    properties: 
+      domain: 'Thick Client'
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F05B335B31DEF1C5C3E43161373164
+    dependencies: 
+      - path: /RFT_Project/.classpath
+        type: FtScriptDependants
+      - path: /RFT_Project/.project
+        type: FtScriptDependants
+      - path: /RFT_Project/CD_StartAppA.java
+        type: FtScriptDependants
+      - path: /RFT_Project/CD_StartAppA.testsuite
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_StartAppA.PlaceOrder_text.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_StartAppA.rftdef
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_StartAppA.rftxmap
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CD_StartAppAHelper.java
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+  - name: ClassicsCD.java
+  - name: ClassicsCD.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.5.0
+    properties: 
+      domain: 'Thick Client'
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F05B335B3DC59FC5C3E43161373164
+    dependencies: 
+      - path: /RFT_Project/.classpath
+        type: FtScriptDependants
+      - path: /RFT_Project/.project
+        type: FtScriptDependants
+      - path: /RFT_Project/ClassicsCD.java
+        type: FtScriptDependants
+      - path: /RFT_Project/ClassicsCD.testsuite
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/ClassicsCD.PlaceOrder_text.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/ClassicsCD.YourOrderHasBeenReceivedYourOr_text.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/ClassicsCD.csv
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/ClassicsCD.csv.metadata
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/ClassicsCD.rftdef
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/ClassicsCD.rftxmap
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/ClassicsCDHelper.java
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+  - name: ClassicsCDStepDefs.java
+    missing: true
+  - name: ClassicsCDStepDefs.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F05B335B42CEAFC5C3E43161373164
+    dependencies: 
+      - path: /RFT_Project/.classpath
+        type: FtScriptDependants
+      - path: /RFT_Project/.project
+        type: FtScriptDependants
+      - path: /RFT_Project/ClassicsCDStepDefs.java
+        type: FtScriptDependants
+      - path: /RFT_Project/ClassicsCDStepDefs.testsuite
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/ClassicsCDStepDefs.rftdef
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/ClassicsCDStepDefs.rftxmap
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/ClassicsCDStepDefsHelper.java
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+  - name: CucumberRunner.java
+    missing: true
+  - name: CucumberRunner.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F05B335B476299C5C3E43161373164
+    dependencies: 
+      - path: /RFT_Project/.classpath
+        type: FtScriptDependants
+      - path: /RFT_Project/.project
+        type: FtScriptDependants
+      - path: /RFT_Project/CucumberRunner.java
+        type: FtScriptDependants
+      - path: /RFT_Project/CucumberRunner.testsuite
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CucumberRunner.rftdef
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CucumberRunner.rftxmap
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/CucumberRunnerHelper.java
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+  - name: DataDriven_3270.java
+  - name: DataDriven_3270.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.5.0
+    properties: 
+      domain: 'Thick Client'
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F05B335B4EB570C5C3E43161373164
+    dependencies: 
+      - path: /RFT_Project/.classpath
+        type: FtScriptDependants
+      - path: /RFT_Project/.project
+        type: FtScriptDependants
+      - path: /RFT_Project/DataDriven_3270.java
+        type: FtScriptDependants
+      - path: /RFT_Project/DataDriven_3270.testsuite
+        type: FtScriptDependants
+      - path: /RFT_Project/User_IDs_3270.csv
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DataDriven_3270.DOB.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DataDriven_3270.Email.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DataDriven_3270.FirstName.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DataDriven_3270.HouseName.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DataDriven_3270.HouseNumber.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DataDriven_3270.LastName.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DataDriven_3270.Mobile.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DataDriven_3270.Postcode.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DataDriven_3270.Telephone.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DataDriven_3270.rftdef
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DataDriven_3270.rftxmap
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DataDriven_3270Helper.java
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+  - name: DevOpsAPI.java
+  - name: DevOpsAPI.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.5.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F05B335B50FFAFC5C3E43161373164
+    dependencies: 
+      - path: /RFT_Project/.classpath
+        type: FtScriptDependants
+      - path: /RFT_Project/.project
+        type: FtScriptDependants
+      - path: /RFT_Project/DevOpsAPI.java
+        type: FtScriptDependants
+      - path: /RFT_Project/DevOpsAPI.testsuite
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DevOpsAPI.rftdef
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DevOpsAPI.rftxmap
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DevOpsAPIHelper.java
+        type: FtScriptDependants
+  - name: Pdf_Test.java
+  - name: Pdf_Test.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.5.0
+    properties: 
+      domain: 'Thick Client'
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F05B335B5D5B99C5C3E43161373164
+    dependencies: 
+      - path: /RFT_Project/.classpath
+        type: FtScriptDependants
+      - path: /RFT_Project/.project
+        type: FtScriptDependants
+      - path: /RFT_Project/Pdf_Test.java
+        type: FtScriptDependants
+      - path: /RFT_Project/Pdf_Test.testsuite
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/Pdf_Test.rftdef
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/Pdf_Test.rftxmap
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/Pdf_TestHelper.java
+        type: FtScriptDependants
+  - name: Runner
+    resources: 
+      - name: Runner_order.java
+      - name: Runner_order.testsuite
+        type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+        version: 11.0.5.0
+        properties: 
+          features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+          type: com.ibm.rational.test.lt.lttest
+          uid: A1F05B335B774C40C5C3E43161373164
+        dependencies: 
+          - path: /RFT_Project/.classpath
+            type: FtScriptDependants
+          - path: /RFT_Project/.project
+            type: FtScriptDependants
+          - path: /RFT_Project/Runner/Runner_order.java
+            type: FtScriptDependants
+          - path: /RFT_Project/Runner/Runner_order.testsuite
+            type: FtScriptDependants
+          - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+            type: FtScriptDependants
+          - path: /RFT_Project/resources/Runner/Runner_order.rftdef
+            type: FtScriptDependants
+          - path: /RFT_Project/resources/Runner/Runner_order.rftxmap
+            type: FtScriptDependants
+          - path: /RFT_Project/resources/Runner/Runner_orderHelper.java
+            type: FtScriptDependants
+  - name: SSC1_Insurance_Lookup_3270.java
+  - name: SSC1_Insurance_Lookup_3270.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.5.0
+    properties: 
+      domain: 'Thick Client'
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F05B335B6DD67FC5C3E43161373164
+    dependencies: 
+      - path: /RFT_Project/.classpath
+        type: FtScriptDependants
+      - path: /RFT_Project/.project
+        type: FtScriptDependants
+      - path: /RFT_Project/SSC1_Insurance_Lookup_3270.java
+        type: FtScriptDependants
+      - path: /RFT_Project/SSC1_Insurance_Lookup_3270.testsuite
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/SSC1_Insurance_Lookup_3270.Email.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/SSC1_Insurance_Lookup_3270.Email2.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/SSC1_Insurance_Lookup_3270.Email3.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/SSC1_Insurance_Lookup_3270.rftdef
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/SSC1_Insurance_Lookup_3270.rftxmap
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/SSC1_Insurance_Lookup_3270Helper.java
+        type: FtScriptDependants
+  - name: StartApp.java
+  - name: StartApp.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.5.0
+    properties: 
+      domain: 'Thick Client'
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F05B335B729172C5C3E43161373164
+    dependencies: 
+      - path: /RFT_Project/.classpath
+        type: FtScriptDependants
+      - path: /RFT_Project/.project
+        type: FtScriptDependants
+      - path: /RFT_Project/StartApp.java
+        type: FtScriptDependants
+      - path: /RFT_Project/StartApp.testsuite
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/StartApp.rftdef
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/StartApp.rftxmap
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/StartAppHelper.java
+        type: FtScriptDependants
+  - name: User_IDs_3270.csv
+    type: com.ibm.rational.test.lt.datapool
+    dependencies: 
+      - path: /RFT_Project/User_IDs_3270.csv.metadata
+        type: datasetMetadata
+  - name: User_IDs_3270.csv.metadata
+  - name: cics_terminal_inputs_3270.java
+  - name: cics_terminal_inputs_3270.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.5.0
+    properties: 
+      domain: 'Thick Client'
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F05B335B390A9AC5C3E43161373164
+    dependencies: 
+      - path: /RFT_Project/.classpath
+        type: FtScriptDependants
+      - path: /RFT_Project/.project
+        type: FtScriptDependants
+      - path: /RFT_Project/cics_terminal_inputs_3270.java
+        type: FtScriptDependants
+      - path: /RFT_Project/cics_terminal_inputs_3270.testsuite
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/cics_terminal_inputs_3270.email.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/cics_terminal_inputs_3270.rftdef
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/cics_terminal_inputs_3270.rftxmap
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/cics_terminal_inputs_3270Helper.java
+        type: FtScriptDependants
+  - name: resources
+    resources: 
+      - name: App_ClassicCD.rftdef
+      - name: App_ClassicCD.rftxmap
+      - name: App_ClassicCDHelper.java
+      - name: CD_InsertOrder.Item_text.base.rftvp
+      - name: CD_InsertOrder.YourOrderHasBeenReceivedYourOr_text.base.rftvp
+      - name: CD_InsertOrder.csv
+        type: com.ibm.rational.test.lt.datapool
+        dependencies: 
+          - path: /RFT_Project/resources/CD_InsertOrder.csv.metadata
+            type: datasetMetadata
+      - name: CD_InsertOrder.csv.metadata
+      - name: CD_InsertOrder.rftdef
+      - name: CD_InsertOrder.rftxmap
+      - name: CD_InsertOrderHelper.java
+      - name: CD_Logon.ExistingCustomer_state.base.rftvp
+      - name: CD_Logon.csv
+        type: com.ibm.rational.test.lt.datapool
+        dependencies: 
+          - path: /RFT_Project/resources/CD_Logon.csv.metadata
+            type: datasetMetadata
+      - name: CD_Logon.csv.metadata
+      - name: CD_Logon.rftdef
+      - name: CD_Logon.rftxmap
+      - name: CD_LogonHelper.java
+      - name: CD_StartAppA.PlaceOrder_text.base.rftvp
+      - name: CD_StartAppA.rftdef
+      - name: CD_StartAppA.rftxmap
+      - name: CD_StartAppAHelper.java
+      - name: ClassicsCD.PlaceOrder_text.base.rftvp
+      - name: ClassicsCD.YourOrderHasBeenReceivedYourOr_text.base.rftvp
+      - name: ClassicsCD.csv
+        type: com.ibm.rational.test.lt.datapool
+        dependencies: 
+          - path: /RFT_Project/resources/ClassicsCD.csv.metadata
+            type: datasetMetadata
+      - name: ClassicsCD.csv.metadata
+      - name: ClassicsCD.rftdef
+      - name: ClassicsCD.rftxmap
+      - name: ClassicsCDHelper.java
+      - name: ClassicsCDStepDefs.rftdef
+      - name: ClassicsCDStepDefs.rftxmap
+      - name: ClassicsCDStepDefsHelper.java
+      - name: CucumberRunner.rftdef
+      - name: CucumberRunner.rftxmap
+      - name: CucumberRunnerHelper.java
+      - name: DataDriven_3270.DOB.base.rftvp
+      - name: DataDriven_3270.Email.base.rftvp
+      - name: DataDriven_3270.FirstName.base.rftvp
+      - name: DataDriven_3270.HouseName.base.rftvp
+      - name: DataDriven_3270.HouseNumber.base.rftvp
+      - name: DataDriven_3270.LastName.base.rftvp
+      - name: DataDriven_3270.Mobile.base.rftvp
+      - name: DataDriven_3270.Postcode.base.rftvp
+      - name: DataDriven_3270.Telephone.base.rftvp
+      - name: DataDriven_3270.rftdef
+      - name: DataDriven_3270.rftxmap
+      - name: DataDriven_3270Helper.java
+      - name: DatastoreDefinition.rftdsd
+      - name: DevOpsAPI.rftdef
+      - name: DevOpsAPI.rftxmap
+      - name: DevOpsAPIHelper.java
+      - name: Pdf_Test.rftdef
+      - name: Pdf_Test.rftxmap
+      - name: Pdf_TestHelper.java
+      - name: Runner
+        resources: 
+          - name: Runner_order.rftdef
+          - name: Runner_order.rftxmap
+          - name: Runner_orderHelper.java
+      - name: SSC1_Insurance_Lookup_3270.Email.base.rftvp
+      - name: SSC1_Insurance_Lookup_3270.Email2.base.rftvp
+      - name: SSC1_Insurance_Lookup_3270.Email3.base.rftvp
+      - name: SSC1_Insurance_Lookup_3270.rftdef
+      - name: SSC1_Insurance_Lookup_3270.rftxmap
+      - name: SSC1_Insurance_Lookup_3270Helper.java
+      - name: StartApp.rftdef
+      - name: StartApp.rftxmap
+      - name: StartAppHelper.java
+      - name: cics_terminal_inputs_3270.email.base.rftvp
+      - name: cics_terminal_inputs_3270.rftdef
+      - name: cics_terminal_inputs_3270.rftxmap
+      - name: cics_terminal_inputs_3270Helper.java
+      - name: script_3270.HouseName.base.rftvp
+      - name: script_3270.rftdef
+      - name: script_3270.rftxmap
+      - name: script_3270Helper.java
+      - name: steps
+        resources: 
+          - name: ClassicsCDStepDef.rftdef
+          - name: ClassicsCDStepDef.rftxmap
+          - name: ClassicsCDStepDefHelper.java
+  - name: script_3270.java
+  - name: script_3270.testsuite
+    type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+    version: 11.0.5.0
+    properties: 
+      domain: 'Thick Client'
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F05B335B68F430C5C3E43161373164
+    dependencies: 
+      - path: /RFT_Project/.classpath
+        type: FtScriptDependants
+      - path: /RFT_Project/.project
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/script_3270.HouseName.base.rftvp
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/script_3270.rftdef
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/script_3270.rftxmap
+        type: FtScriptDependants
+      - path: /RFT_Project/resources/script_3270Helper.java
+        type: FtScriptDependants
+      - path: /RFT_Project/script_3270.java
+        type: FtScriptDependants
+      - path: /RFT_Project/script_3270.testsuite
+        type: FtScriptDependants
+  - name: steps
+    resources: 
+      - name: ClassicsCDStepDef.java
+      - name: ClassicsCDStepDef.testsuite
+        type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+        version: 11.0.5.0
+        properties: 
+          features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+          type: com.ibm.rational.test.lt.lttest
+          uid: A1F05B335B7E7829C5C3E43161373164
+        dependencies: 
+          - path: /RFT_Project/.classpath
+            type: FtScriptDependants
+          - path: /RFT_Project/.project
+            type: FtScriptDependants
+          - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+            type: FtScriptDependants
+          - path: /RFT_Project/resources/steps/ClassicsCDStepDef.rftdef
+            type: FtScriptDependants
+          - path: /RFT_Project/resources/steps/ClassicsCDStepDef.rftxmap
+            type: FtScriptDependants
+          - path: /RFT_Project/resources/steps/ClassicsCDStepDefHelper.java
+            type: FtScriptDependants
+          - path: /RFT_Project/steps/ClassicsCDStepDef.java
+            type: FtScriptDependants
+          - path: /RFT_Project/steps/ClassicsCDStepDef.testsuite
+            type: FtScriptDependants
+      - name: Script1.java
+      - name: Script1.testsuite
+        type: com.ibm.rational.test.rtw.rft.navigator.rftScripts
+        version: 11.0.4.0
+        properties: 
+          features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.rtw.rft'
+          type: com.ibm.rational.test.lt.lttest
+          uid: A1EFF0617BCF1E80F569B53633616238
+        dependencies: 
+          - path: /RFT_Project/.classpath
+            type: FtScriptDependants
+          - path: /RFT_Project/.project
+            type: FtScriptDependants
+          - path: /RFT_Project/resources/DatastoreDefinition.rftdsd
+            type: FtScriptDependants
+          - path: /RFT_Project/steps/Script1.java
+            type: FtScriptDependants
