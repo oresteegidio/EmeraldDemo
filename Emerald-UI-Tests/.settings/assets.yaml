@@ -82,6 +82,36 @@ resources:
         type: scheduleInvokedTest
       - path: /Emerald-UI-Tests/Dining_Compound.testsuite
         type: scheduleInvokedTest
+  - name: CP_ApiWeb_1761146713812.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1761146713812
+      tags: 
+      testId: A1F0AF5AB7FCA292E37FB33736653861
+      testName: CP_ApiWeb
+    dependencies: 
+      - path: /Emerald-UI-Tests/CP_ApiWeb.testsuite
+        type: statsSessionTest
+      - path: /Emerald-UI-Tests/CP_ApiWeb_1761146713812.xmoebreport
+        type: statsSessionAsset
+      - path: /Emerald-UI-Tests/CP_ApiWeb_1761146713812_orch!system.mstats
+        type: statsSessionStore
+      - path: /Emerald-UI-Tests/CP_ApiWeb_1761146713812_orch!system.rstats
+        type: statsSessionStore
+      - path: /Emerald-UI-Tests/CP_ApiWeb_1761146713812_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Emerald-UI-Tests/CP_ApiWeb_1761146713812_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Emerald-UI-Tests/CP_ApiWeb_1761146725977.executiondlr
+        type: statsSessionAsset
+  - name: CP_ApiWeb_1761146713812.xmoebreport
+  - name: CP_ApiWeb_1761146713812_orch!system.mstats
+  - name: CP_ApiWeb_1761146713812_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: CP_ApiWeb_1761146713812_perf!localhost.mstats
+  - name: CP_ApiWeb_1761146713812_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: CP_ApiWeb_1761146725977.executiondlr
   - name: CP_Regression_1690371771384.htm
     type: com.ibm.rational.test.lt.html
   - name: Chair_Selection.recdata
@@ -378,5 +408,9 @@ resources:
         resources: 
           - name: API_Test_CompoundTest_A1EC8E6947F5E3D0F5D8B46531386263.java
             type: com.ibm.rational.test.lt.generatedCode
+          - name: CP_ApiWeb_CompoundTest_A1F0AF5AB7FCA292E37FB33736653861.java
+            type: com.ibm.rational.test.lt.generatedCode
           - name: Dining_Compound_Test_A1F0AF547F0A9900E37FB33736653861.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: Dining_Compound_Test_A1F0AF5AE5689849E37FB33736653861.java
             type: com.ibm.rational.test.lt.generatedCode
