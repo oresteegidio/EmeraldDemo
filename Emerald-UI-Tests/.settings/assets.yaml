@@ -2,6 +2,7 @@ name: Emerald-UI-Tests
 version: 2
 projectReferences: 
   - /BeforeDemo
+  - /DemoAPI
   - /RFT_Project
   - /SAP
 resources: 
@@ -10,6 +11,66 @@ resources:
     dependencies: 
       - path: /Emerald-UI-Tests/src
         type: javaClasspath
+  - name: API_Test_1761144107887.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1761144107887
+      tags: 
+      testId: A1EC8E6947F5E3D0F5D8B46531386263
+      testName: API_Test
+    dependencies: 
+      - path: /Emerald-UI-Tests/API_Test_1761144107887.xmoebreport
+        type: statsSessionAsset
+      - path: /Emerald-UI-Tests/API_Test_1761144107887_orch!system.mstats
+        type: statsSessionStore
+      - path: /Emerald-UI-Tests/API_Test_1761144107887_orch!system.rstats
+        type: statsSessionStore
+      - path: /Emerald-UI-Tests/API_Test_1761144107887_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Emerald-UI-Tests/API_Test_1761144107887_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Emerald-UI-Tests/API_Test_1761144122101.executiondlr
+        type: statsSessionAsset
+      - path: /Emerald-UI-Tests/Emerald/API_Test.testsuite
+        type: statsSessionTest
+  - name: API_Test_1761144107887.xmoebreport
+  - name: API_Test_1761144107887_orch!system.mstats
+  - name: API_Test_1761144107887_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: API_Test_1761144107887_perf!localhost.mstats
+  - name: API_Test_1761144107887_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: API_Test_1761144122101.executiondlr
+  - name: API_Test_1761144265777.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1761144265777
+      tags: 
+      testId: A1EC8E6947F5E3D0F5D8B46531386263
+      testName: API_Test
+    dependencies: 
+      - path: /Emerald-UI-Tests/API_Test_1761144265777.xmoebreport
+        type: statsSessionAsset
+      - path: /Emerald-UI-Tests/API_Test_1761144265777_orch!system.mstats
+        type: statsSessionStore
+      - path: /Emerald-UI-Tests/API_Test_1761144265777_orch!system.rstats
+        type: statsSessionStore
+      - path: /Emerald-UI-Tests/API_Test_1761144265777_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Emerald-UI-Tests/API_Test_1761144265777_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Emerald-UI-Tests/API_Test_1761144277647.executiondlr
+        type: statsSessionAsset
+      - path: /Emerald-UI-Tests/Emerald/API_Test.testsuite
+        type: statsSessionTest
+  - name: API_Test_1761144265777.xmoebreport
+  - name: API_Test_1761144265777_orch!system.mstats
+  - name: API_Test_1761144265777_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: API_Test_1761144265777_perf!localhost.mstats
+  - name: API_Test_1761144265777_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: API_Test_1761144277647.executiondlr
   - name: Bath_Search.recdata
   - name: Bath_Search.recsession
     type: com.ibm.rational.test.lt.recsession
@@ -415,10 +476,19 @@ resources:
         properties: 
           description: 'Test(s): 
 
+	Dining_Compound
+
 '
           name: API_Test
           type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
           uid: A1EC8E6947F5E3D0F5D8B46531386263
+        dependencies: 
+          - path: '/DemoAPI/Custom/Commerce React Store PUBLIC.ghe'
+            type: scheduleDependencies
+          - path: '/DemoAPI/Logical/EmeraldAPIs.scm/React Store.scm/GET Top Categories.opr/GET Top Categories.tsq'
+            type: scheduleInvokedTest
+          - path: /Emerald-UI-Tests/Emerald/Dining_Compound.testsuite
+            type: scheduleInvokedTest
       - name: 'Add Item to basket-add.recdata'
       - name: 'Add Item to basket-add.recsession'
         type: com.ibm.rational.test.lt.recsession
@@ -445,6 +515,24 @@ resources:
         dependencies: 
           - path: /Emerald-UI-Tests/hclsofy_com_727.ma
             type: test#moeb.applicationPackage
+      - name: Dining_Compound.recdata
+      - name: Dining_Compound.recsession
+        type: com.ibm.rational.test.lt.recsession
+        dependencies: 
+          - path: /Emerald-UI-Tests/Emerald/Dining_Compound.recdata
+            type: recsessionRecdata
+      - name: Dining_Compound.testsuite
+        type: com.ibm.rational.test.lt.test
+        version: 11.0.6.0
+        properties: 
+          features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+          type: com.ibm.rational.test.lt.lttest
+          uid: A1F0AF547F0A9900E37FB33736653861
+        dependencies: 
+          - path: /BeforeDemo/ng_instance_166.ma
+            type: test#moeb.applicationPackage
+          - path: /Emerald-UI-Tests/Emerald/Dining_Compound.recsession
+            type: testRecsession
       - name: 'Login Add Item & Checkout.testsuite'
         type: com.ibm.rational.test.lt.scenario
         version: 11.0.6.0
@@ -655,3 +743,9 @@ resources:
       - name: extractnumber
         resources: 
           - name: Class.java
+      - name: test
+        resources: 
+          - name: API_Test_CompoundTest_A1EC8E6947F5E3D0F5D8B46531386263.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: Dining_Compound_Test_A1F0AF547F0A9900E37FB33736653861.java
+            type: com.ibm.rational.test.lt.generatedCode

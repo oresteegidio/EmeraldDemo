@@ -45,6 +45,36 @@ resources:
     dependencies: 
       - path: /UI_Project/DiningFromApi.testsuite
         type: scheduleInvokedTest
+  - name: CP_ApiWeb_1761141515919.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1761141515919
+      tags: 
+      testId: A1EFCD0BD3E6FE40D4BAB06530363233
+      testName: CP_ApiWeb
+    dependencies: 
+      - path: /UI_Project/CP_ApiWeb.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/CP_ApiWeb_1761141515919.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/CP_ApiWeb_1761141515919_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/CP_ApiWeb_1761141515919_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/CP_ApiWeb_1761141515919_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/CP_ApiWeb_1761141515919_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/CP_ApiWeb_1761141529337.executiondlr
+        type: statsSessionAsset
+  - name: CP_ApiWeb_1761141515919.xmoebreport
+  - name: CP_ApiWeb_1761141515919_orch!system.mstats
+  - name: CP_ApiWeb_1761141515919_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: CP_ApiWeb_1761141515919_perf!localhost.mstats
+  - name: CP_ApiWeb_1761141515919_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: CP_ApiWeb_1761141529337.executiondlr
   - name: CP_Prova.testsuite
     type: com.ibm.rational.test.lt.scenario
     version: 11.0.5.0
@@ -64,12 +94,6 @@ resources:
       - path: /UI_Project/DS_FirstDataGeneration.csv.metadata
         type: datasetMetadata
   - name: DS_FirstDataGeneration.csv.metadata
-  - name: DS_ForDemo.csv
-    type: com.ibm.rational.test.lt.datapool
-    dependencies: 
-      - path: /UI_Project/DS_ForDemo.csv.metadata
-        type: datasetMetadata
-  - name: DS_ForDemo.csv.metadata
   - name: DiningFromApi.recdata
   - name: DiningFromApi.recsession
     type: com.ibm.rational.test.lt.recsession
@@ -78,16 +102,46 @@ resources:
         type: recsessionRecdata
   - name: DiningFromApi.testsuite
     type: com.ibm.rational.test.lt.test
-    version: 11.0.5.0
+    version: 11.0.6.0
     properties: 
       features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
       type: com.ibm.rational.test.lt.lttest
       uid: A1EFCCE3EE6CE090E16BB33235363262
     dependencies: 
-      - path: /Emerald-UI-Tests/hclsofy_com_727.ma
+      - path: /BeforeDemo/ng_instance_166.ma
         type: test#moeb.applicationPackage
       - path: /UI_Project/DiningFromApi.recsession
         type: testRecsession
+  - name: DiningFromApi_1761141905717.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1761141905717
+      tags: 
+      testId: A1EFCCE3EE6CE090E16BB33235363262
+      testName: DiningFromApi
+    dependencies: 
+      - path: /UI_Project/DiningFromApi.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/DiningFromApi_1761141905717.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/DiningFromApi_1761141905717_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/DiningFromApi_1761141905717_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/DiningFromApi_1761141905717_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/DiningFromApi_1761141905717_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/DiningFromApi_1761141917560.executiondlr
+        type: statsSessionAsset
+  - name: DiningFromApi_1761141905717.xmoebreport
+  - name: DiningFromApi_1761141905717_orch!system.mstats
+  - name: DiningFromApi_1761141905717_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: DiningFromApi_1761141905717_perf!localhost.mstats
+  - name: DiningFromApi_1761141905717_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: DiningFromApi_1761141917560.executiondlr
   - name: Fleet.recdata
   - name: Fleet.recsession
     type: com.ibm.rational.test.lt.recsession
@@ -1110,7 +1164,7 @@ resources:
         type: recsessionRecdata
   - name: SimpleDS_Usage.testsuite
     type: com.ibm.rational.test.lt.test
-    version: 11.0.5.0
+    version: 11.0.6.0
     properties: 
       features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
       type: com.ibm.rational.test.lt.lttest
@@ -1118,13 +1172,11 @@ resources:
     dependencies: 
       - path: /Emerald-UI-Tests/hclsofy_com_727.ma
         type: test#moeb.applicationPackage
-      - path: /UI_Project/DS_ForDemo.csv
-        type: testDatapool
       - path: /UI_Project/SimpleDS_Usage.recsession
         type: testRecsession
   - name: SimpleDS_withVar.testsuite
     type: com.ibm.rational.test.lt.test
-    version: 11.0.5.0
+    version: 11.0.6.0
     properties: 
       features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
       type: com.ibm.rational.test.lt.lttest
@@ -1132,8 +1184,6 @@ resources:
     dependencies: 
       - path: /Emerald-UI-Tests/hclsofy_com_727.ma
         type: test#moeb.applicationPackage
-      - path: /UI_Project/DS_ForDemo.csv
-        type: testDatapool
       - path: /UI_Project/SimpleDS_Usage.recsession
         type: testRecsession
   - name: Web_localhost.ma
@@ -1330,6 +1380,12 @@ resources:
   - name: resort_1754395844205.executiondlr
   - name: src
     resources: 
+      - name: test
+        resources: 
+          - name: CP_ApiWeb_CompoundTest_A1EFCD0BD3E6FE40D4BAB06530363233.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: DiningFromApi_Test_A1EFCCE3EE6CE090E16BB33235363262.java
+            type: com.ibm.rational.test.lt.generatedCode
   - name: test.recdata
   - name: test.recsession
     type: com.ibm.rational.test.lt.recsession
@@ -1338,7 +1394,7 @@ resources:
         type: recsessionRecdata
   - name: test.testsuite
     type: com.ibm.rational.test.lt.test
-    version: 11.0.5.0
+    version: 11.0.6.0
     properties: 
       features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
       type: com.ibm.rational.test.lt.lttest

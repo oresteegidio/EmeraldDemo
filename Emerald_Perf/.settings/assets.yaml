@@ -94,12 +94,25 @@ resources:
       features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.http'
       type: com.ibm.rational.test.lt.lttest
       uid: A1F06B96C31FC130C9E9B23064353138
+    dependencies: 
+      - path: /Emerald-UI-Tests/Bath_Search.testsuite
+        type: testOriginalTest
   - name: Bath_Search.recdata
   - name: Bath_Search.recsession
     type: com.ibm.rational.test.lt.recsession
     dependencies: 
       - path: /Emerald_Perf/Bath_Search.recdata
         type: recsessionRecdata
+  - name: Bath_Search.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.6.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.http'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F0AE7038468040E49EB33239313261
+    dependencies: 
+      - path: /Emerald_Perf/Bath_Search.recsession
+        type: testRecsession
   - name: Bath_Search_1753695767149.stats
     type: com.ibm.rational.test.lt.stats.session
     properties: 
@@ -127,6 +140,33 @@ resources:
   - name: Bath_Search_1753695767149_perf!localhost.rstats
     type: com.ibm.rational.test.lt.stats.raw
   - name: Bath_Search_1753695778897.executiondlr
+  - name: Bath_Search_1761046005472.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1761046005472
+      tags: 
+      testId: A1F0AE7038468040E49EB33239313261
+      testName: Bath_Search
+    dependencies: 
+      - path: /Emerald_Perf/Bath_Search.testsuite
+        type: statsSessionTest
+      - path: /Emerald_Perf/Bath_Search_1761046005472_orch!system.mstats
+        type: statsSessionStore
+      - path: /Emerald_Perf/Bath_Search_1761046005472_orch!system.rstats
+        type: statsSessionStore
+      - path: /Emerald_Perf/Bath_Search_1761046005472_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Emerald_Perf/Bath_Search_1761046005472_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Emerald_Perf/Bath_Search_1761046018445.executiondlr
+        type: statsSessionAsset
+  - name: Bath_Search_1761046005472_orch!system.mstats
+  - name: Bath_Search_1761046005472_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Bath_Search_1761046005472_perf!localhost.mstats
+  - name: Bath_Search_1761046005472_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Bath_Search_1761046018445.executiondlr
   - name: BuyBedAsGuest.recdata
   - name: BuyBedAsGuest.recsession
     type: com.ibm.rational.test.lt.recsession
@@ -141,6 +181,8 @@ resources:
       type: com.ibm.rational.test.lt.lttest
       uid: A1F06BA1DFB5B6A0C9E9B23064353138
     dependencies: 
+      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest.testsuite
+        type: testOriginalTest
       - path: /Emerald_Perf/BuyBedAsGuest.recsession
         type: testRecsession
   - name: BuyBedAsGuest_1753701156287.stats
@@ -190,6 +232,8 @@ resources:
       type: com.ibm.rational.test.lt.lttest
       uid: A1F06B978D0DC910C9E9B23064353138
     dependencies: 
+      - path: /Emerald-UI-Tests/Dining_Search.testsuite
+        type: testOriginalTest
       - path: /Emerald_Perf/DiningSearch.recsession
         type: testRecsession
   - name: DiningSearch_1753696745616.stats
@@ -314,5 +358,5 @@ sell: Group Size 30.0 percent
     resources: 
       - name: test
         resources: 
-          - name: BathSearch_Test_A1F06B96C31FC130C9E9B23064353138.java
+          - name: Bath_Search_Test_A1F0AE7038468040E49EB33239313261.java
             type: com.ibm.rational.test.lt.generatedCode

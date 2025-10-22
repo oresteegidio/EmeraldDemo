@@ -521,6 +521,36 @@ resources:
   - name: CP_EM_1756975868817_perf!localhost.rstats
     type: com.ibm.rational.test.lt.stats.raw
   - name: CP_EM_1756975880856.executiondlr
+  - name: Dining.testsuite
+    missing: true
+  - name: Dining_1761046299913.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1761046299913
+      tags: 
+      testId: A1F0AE7173DC4BC0E49EB33239313261
+      testName: Dining
+    dependencies: 
+      - path: /BeforeDemo/Dining_1761046299913.xmoebreport
+        type: statsSessionAsset
+      - path: /BeforeDemo/Dining_1761046299913_orch!system.mstats
+        type: statsSessionStore
+      - path: /BeforeDemo/Dining_1761046299913_orch!system.rstats
+        type: statsSessionStore
+      - path: /BeforeDemo/Dining_1761046299913_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /BeforeDemo/Dining_1761046299913_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /BeforeDemo/Dining_1761046311293.executiondlr
+        type: statsSessionAsset
+  - name: Dining_1761046299913.xmoebreport
+  - name: Dining_1761046299913_orch!system.mstats
+  - name: Dining_1761046299913_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Dining_1761046299913_perf!localhost.mstats
+  - name: Dining_1761046299913_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Dining_1761046311293.executiondlr
   - name: EM_1.recdata
   - name: EM_1.recsession
     type: com.ibm.rational.test.lt.recsession
@@ -555,6 +585,8 @@ resources:
     dependencies: 
       - path: /BeforeDemo/EM_2.recsession
         type: testRecsession
+      - path: /BeforeDemo/ng_instance_166.ma
+        type: test#moeb.applicationPackage
   - name: Me21n.recdata
   - name: Me21n.recsession
     type: com.ibm.rational.test.lt.recsession
@@ -595,3 +627,7 @@ resources:
     type: moeb.applicationPackage
   - name: src
     resources: 
+      - name: test
+        resources: 
+          - name: Dining_Test_A1F0AE7173DC4BC0E49EB33239313261.java
+            type: com.ibm.rational.test.lt.generatedCode
