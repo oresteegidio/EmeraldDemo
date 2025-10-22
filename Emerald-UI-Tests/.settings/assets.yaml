@@ -483,7 +483,7 @@ resources:
           type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
           uid: A1EC8E6947F5E3D0F5D8B46531386263
         dependencies: 
-          - path: '/DemoAPI/Custom/Commerce React Store PUBLIC.ghe'
+          - path: /DemoAPI/Custom/TELEMEDICINA_ENV.ghe
             type: scheduleDependencies
           - path: '/DemoAPI/Logical/EmeraldAPIs.scm/React Store.scm/GET Top Categories.opr/GET Top Categories.tsq'
             type: scheduleInvokedTest
