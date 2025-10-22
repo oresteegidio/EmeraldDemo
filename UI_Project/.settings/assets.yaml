@@ -37,8 +37,6 @@ resources:
     properties: 
       description: 'Test(s): 
 
-	Dining_Compound
-
 '
       name: CP_ApiWeb
       type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
@@ -47,8 +45,6 @@ resources:
       - path: '/DemoAPI/Custom/Commerce React Store PUBLIC.ghe'
         type: scheduleDependencies
       - path: '/DemoAPI/Logical/EmeraldAPIs.scm/React Store.scm/GET Top Categories.opr/GET Top Categories.tsq'
-        type: scheduleInvokedTest
-      - path: /Emerald-UI-Tests/Emerald/Dining_Compound.testsuite
         type: scheduleInvokedTest
   - name: CP_ApiWeb_1761141515919.stats
     type: com.ibm.rational.test.lt.stats.session

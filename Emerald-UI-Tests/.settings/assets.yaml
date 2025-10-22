@@ -4,73 +4,12 @@ projectReferences:
   - /BeforeDemo
   - /DemoAPI
   - /RFT_Project
-  - /SAP
 resources: 
   - name: .classpath
     type: com.ibm.rational.test.lt.classpath
     dependencies: 
       - path: /Emerald-UI-Tests/src
         type: javaClasspath
-  - name: API_Test_1761144107887.stats
-    type: com.ibm.rational.test.lt.stats.session
-    properties: 
-      startTime: 1761144107887
-      tags: 
-      testId: A1EC8E6947F5E3D0F5D8B46531386263
-      testName: API_Test
-    dependencies: 
-      - path: /Emerald-UI-Tests/API_Test_1761144107887.xmoebreport
-        type: statsSessionAsset
-      - path: /Emerald-UI-Tests/API_Test_1761144107887_orch!system.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/API_Test_1761144107887_orch!system.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/API_Test_1761144107887_perf!localhost.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/API_Test_1761144107887_perf!localhost.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/API_Test_1761144122101.executiondlr
-        type: statsSessionAsset
-      - path: /Emerald-UI-Tests/Emerald/API_UI_ReadyTest.testsuite
-        type: statsSessionTest
-  - name: API_Test_1761144107887.xmoebreport
-  - name: API_Test_1761144107887_orch!system.mstats
-  - name: API_Test_1761144107887_orch!system.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: API_Test_1761144107887_perf!localhost.mstats
-  - name: API_Test_1761144107887_perf!localhost.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: API_Test_1761144122101.executiondlr
-  - name: API_Test_1761144265777.stats
-    type: com.ibm.rational.test.lt.stats.session
-    properties: 
-      startTime: 1761144265777
-      tags: 
-      testId: A1EC8E6947F5E3D0F5D8B46531386263
-      testName: API_Test
-    dependencies: 
-      - path: /Emerald-UI-Tests/API_Test_1761144265777.xmoebreport
-        type: statsSessionAsset
-      - path: /Emerald-UI-Tests/API_Test_1761144265777_orch!system.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/API_Test_1761144265777_orch!system.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/API_Test_1761144265777_perf!localhost.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/API_Test_1761144265777_perf!localhost.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/API_Test_1761144277647.executiondlr
-        type: statsSessionAsset
-      - path: /Emerald-UI-Tests/Emerald/API_UI_ReadyTest.testsuite
-        type: statsSessionTest
-  - name: API_Test_1761144265777.xmoebreport
-  - name: API_Test_1761144265777_orch!system.mstats
-  - name: API_Test_1761144265777_orch!system.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: API_Test_1761144265777_perf!localhost.mstats
-  - name: API_Test_1761144265777_perf!localhost.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: API_Test_1761144277647.executiondlr
   - name: Bath_Search.recdata
   - name: Bath_Search.recsession
     type: com.ibm.rational.test.lt.recsession
@@ -89,36 +28,6 @@ resources:
         type: test#moeb.applicationPackage
       - path: /Emerald-UI-Tests/Bath_Search.recsession
         type: testRecsession
-  - name: Bath_Search_1753695502276.stats
-    type: com.ibm.rational.test.lt.stats.session
-    properties: 
-      startTime: 1753695502276
-      tags: 
-      testId: A1EE2B999B979FA0EF4FB43535623566
-      testName: Bath_Search
-    dependencies: 
-      - path: /Emerald-UI-Tests/Bath_Search.testsuite
-        type: statsSessionTest
-      - path: /Emerald-UI-Tests/Bath_Search_1753695502276.xmoebreport
-        type: statsSessionAsset
-      - path: /Emerald-UI-Tests/Bath_Search_1753695502276_orch!system.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Bath_Search_1753695502276_orch!system.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Bath_Search_1753695502276_perf!localhost.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Bath_Search_1753695502276_perf!localhost.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Bath_Search_1753695515371.executiondlr
-        type: statsSessionAsset
-  - name: Bath_Search_1753695502276.xmoebreport
-  - name: Bath_Search_1753695502276_orch!system.mstats
-  - name: Bath_Search_1753695502276_orch!system.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Bath_Search_1753695502276_perf!localhost.mstats
-  - name: Bath_Search_1753695502276_perf!localhost.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Bath_Search_1753695515371.executiondlr
   - name: Bed_Buy_AsGuest.recdata
   - name: Bed_Buy_AsGuest.recsession
     type: com.ibm.rational.test.lt.recsession
@@ -137,66 +46,6 @@ resources:
         type: test#moeb.applicationPackage
       - path: /Emerald-UI-Tests/Bed_Buy_AsGuest.recsession
         type: testRecsession
-  - name: Bed_Buy_AsGuest_1753696861506.stats
-    type: com.ibm.rational.test.lt.stats.session
-    properties: 
-      startTime: 1753696861506
-      tags: 
-      testId: A1EE2BA6728FB450EF4FB43535623566
-      testName: Bed_Buy_AsGuest
-    dependencies: 
-      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest.testsuite
-        type: statsSessionTest
-      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest_1753696861506.xmoebreport
-        type: statsSessionAsset
-      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest_1753696861506_orch!system.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest_1753696861506_orch!system.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest_1753696861506_perf!localhost.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest_1753696861506_perf!localhost.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest_1753696872791.executiondlr
-        type: statsSessionAsset
-  - name: Bed_Buy_AsGuest_1753696861506.xmoebreport
-  - name: Bed_Buy_AsGuest_1753696861506_orch!system.mstats
-  - name: Bed_Buy_AsGuest_1753696861506_orch!system.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Bed_Buy_AsGuest_1753696861506_perf!localhost.mstats
-  - name: Bed_Buy_AsGuest_1753696861506_perf!localhost.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Bed_Buy_AsGuest_1753696872791.executiondlr
-  - name: Bed_Buy_AsGuest_1753700012809.stats
-    type: com.ibm.rational.test.lt.stats.session
-    properties: 
-      startTime: 1753700012809
-      tags: 
-      testId: A1EE2BA6728FB450EF4FB43535623566
-      testName: Bed_Buy_AsGuest
-    dependencies: 
-      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest.testsuite
-        type: statsSessionTest
-      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest_1753700012809.xmoebreport
-        type: statsSessionAsset
-      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest_1753700012809_orch!system.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest_1753700012809_orch!system.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest_1753700012809_perf!localhost.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest_1753700012809_perf!localhost.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Bed_Buy_AsGuest_1753700024141.executiondlr
-        type: statsSessionAsset
-  - name: Bed_Buy_AsGuest_1753700012809.xmoebreport
-  - name: Bed_Buy_AsGuest_1753700012809_orch!system.mstats
-  - name: Bed_Buy_AsGuest_1753700012809_orch!system.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Bed_Buy_AsGuest_1753700012809_perf!localhost.mstats
-  - name: Bed_Buy_AsGuest_1753700012809_perf!localhost.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Bed_Buy_AsGuest_1753700024141.executiondlr
   - name: CP_3270.testsuite
     type: com.ibm.rational.test.lt.scenario
     version: 11.0.6.0
@@ -214,33 +63,24 @@ resources:
         type: scheduleInvokedTest
       - path: /RFT_Project/script_3270.testsuite
         type: scheduleInvokedTest
-  - name: CP_ForDemo.testsuite
+  - name: CP_ApiWeb.testsuite
     type: com.ibm.rational.test.lt.scenario
     version: 11.0.6.0
     properties: 
       description: 'Test(s): 
 
-	Chair_Selection
+	Dining_Compound
 
 '
-      name: CP_ForDemo
+      name: CP_ApiWeb
       type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
-      uid: A1EF9CDC67F1E920FFCAE36332353039
+      uid: A1F0AF5AB7FCA292E37FB33736653861
     dependencies: 
-      - path: /Emerald-UI-Tests/Chair_Selection.testsuite
+      - path: '/DemoAPI/Custom/Commerce React Store PUBLIC.ghe'
+        type: scheduleDependencies
+      - path: '/DemoAPI/Logical/EmeraldAPIs.scm/React Store.scm/GET Top Categories.opr/GET Top Categories.tsq'
         type: scheduleInvokedTest
-  - name: CP_RFT.testsuite
-    type: com.ibm.rational.test.lt.scenario
-    version: 11.0.6.0
-    properties: 
-      description: 'Test(s): 
-
-'
-      name: CP_RFT
-      type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
-      uid: A1EE2F917D7FE080C462B63731356531
-    dependencies: 
-      - path: /RFT_Project/ClassicsCD.testsuite
+      - path: /Emerald-UI-Tests/Dining_Compound.testsuite
         type: scheduleInvokedTest
   - name: CP_Regression_1690371771384.htm
     type: com.ibm.rational.test.lt.html
@@ -268,126 +108,6 @@ resources:
     dependencies: 
       - path: /Emerald-UI-Tests/Chair_Selection_1.recdata
         type: recsessionRecdata
-  - name: Chair_Selection_1758114092036.stats
-    type: com.ibm.rational.test.lt.stats.session
-    properties: 
-      startTime: 1758114092036
-      tags: 
-      testId: A1EF9CDB6C0F2F00FFCAE36332353039
-      testName: Chair_Selection
-    dependencies: 
-      - path: /Emerald-UI-Tests/Chair_Selection.testsuite
-        type: statsSessionTest
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114092036.xmoebreport
-        type: statsSessionAsset
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114092036_orch!system.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114092036_orch!system.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114092036_perf!localhost.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114092036_perf!localhost.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114106433.executiondlr
-        type: statsSessionAsset
-  - name: Chair_Selection_1758114092036.xmoebreport
-  - name: Chair_Selection_1758114092036_orch!system.mstats
-  - name: Chair_Selection_1758114092036_orch!system.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Chair_Selection_1758114092036_perf!localhost.mstats
-  - name: Chair_Selection_1758114092036_perf!localhost.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Chair_Selection_1758114106433.executiondlr
-  - name: Chair_Selection_1758114288173.stats
-    type: com.ibm.rational.test.lt.stats.session
-    properties: 
-      startTime: 1758114288173
-      tags: 
-      testId: A1EF9CDB6C0F2F00FFCAE36332353039
-      testName: Chair_Selection
-    dependencies: 
-      - path: /Emerald-UI-Tests/Chair_Selection.testsuite
-        type: statsSessionTest
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114288173.xmoebreport
-        type: statsSessionAsset
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114288173_orch!system.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114288173_orch!system.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114288173_perf!localhost.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114288173_perf!localhost.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114299579.executiondlr
-        type: statsSessionAsset
-  - name: Chair_Selection_1758114288173.xmoebreport
-  - name: Chair_Selection_1758114288173_orch!system.mstats
-  - name: Chair_Selection_1758114288173_orch!system.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Chair_Selection_1758114288173_perf!localhost.mstats
-  - name: Chair_Selection_1758114288173_perf!localhost.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Chair_Selection_1758114299579.executiondlr
-  - name: Chair_Selection_1758114422599.stats
-    type: com.ibm.rational.test.lt.stats.session
-    properties: 
-      startTime: 1758114422599
-      tags: 
-      testId: A1EF9CDB6C0F2F00FFCAE36332353039
-      testName: Chair_Selection
-    dependencies: 
-      - path: /Emerald-UI-Tests/Chair_Selection.testsuite
-        type: statsSessionTest
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114422599.xmoebreport
-        type: statsSessionAsset
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114422599_orch!system.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114422599_orch!system.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114422599_perf!localhost.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114422599_perf!localhost.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114433946.executiondlr
-        type: statsSessionAsset
-  - name: Chair_Selection_1758114422599.xmoebreport
-  - name: Chair_Selection_1758114422599_orch!system.mstats
-  - name: Chair_Selection_1758114422599_orch!system.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Chair_Selection_1758114422599_perf!localhost.mstats
-  - name: Chair_Selection_1758114422599_perf!localhost.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Chair_Selection_1758114433946.executiondlr
-  - name: Chair_Selection_1758114578745.stats
-    type: com.ibm.rational.test.lt.stats.session
-    properties: 
-      startTime: 1758114578745
-      tags: 
-      testId: A1EF9CDB6C0F2F00FFCAE36332353039
-      testName: Chair_Selection
-    dependencies: 
-      - path: /Emerald-UI-Tests/Chair_Selection.testsuite
-        type: statsSessionTest
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114578745.xmoebreport
-        type: statsSessionAsset
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114578745_orch!system.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114578745_orch!system.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114578745_perf!localhost.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114578745_perf!localhost.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Chair_Selection_1758114590145.executiondlr
-        type: statsSessionAsset
-  - name: Chair_Selection_1758114578745.xmoebreport
-  - name: Chair_Selection_1758114578745_orch!system.mstats
-  - name: Chair_Selection_1758114578745_orch!system.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Chair_Selection_1758114578745_perf!localhost.mstats
-  - name: Chair_Selection_1758114578745_perf!localhost.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Chair_Selection_1758114590145.executiondlr
   - name: Chair_Selection_Anchor.testsuite
     type: com.ibm.rational.test.lt.test
     version: 11.0.6.0
@@ -420,6 +140,18 @@ resources:
       - path: /Emerald-UI-Tests/DS_Emerald.csv.metadata
         type: datasetMetadata
   - name: DS_Emerald.csv.metadata
+  - name: Dining_Compound.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.6.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F0AF5AE5689849E37FB33736653861
+    dependencies: 
+      - path: /BeforeDemo/ng_instance_166.ma
+        type: test#moeb.applicationPackage
+      - path: /Emerald-UI-Tests/Emerald/Dining_Compound.recsession
+        type: testRecsession
   - name: Dining_Search.recdata
   - name: Dining_Search.recsession
     type: com.ibm.rational.test.lt.recsession
@@ -438,57 +170,8 @@ resources:
         type: test#moeb.applicationPackage
       - path: /Emerald-UI-Tests/Dining_Search.recsession
         type: testRecsession
-  - name: Dining_Search_1753695856765.stats
-    type: com.ibm.rational.test.lt.stats.session
-    properties: 
-      startTime: 1753695856765
-      tags: 
-      testId: A1EE2BA8BC8866E0EF4FB43535623566
-      testName: Dining_Search
-    dependencies: 
-      - path: /Emerald-UI-Tests/Dining_Search.testsuite
-        type: statsSessionTest
-      - path: /Emerald-UI-Tests/Dining_Search_1753695856765.xmoebreport
-        type: statsSessionAsset
-      - path: /Emerald-UI-Tests/Dining_Search_1753695856765_orch!system.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Dining_Search_1753695856765_orch!system.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Dining_Search_1753695856765_perf!localhost.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Dining_Search_1753695856765_perf!localhost.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/Dining_Search_1753695868107.executiondlr
-        type: statsSessionAsset
-  - name: Dining_Search_1753695856765.xmoebreport
-  - name: Dining_Search_1753695856765_orch!system.mstats
-  - name: Dining_Search_1753695856765_orch!system.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Dining_Search_1753695856765_perf!localhost.mstats
-  - name: Dining_Search_1753695856765_perf!localhost.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: Dining_Search_1753695868107.executiondlr
   - name: Emerald
     resources: 
-      - name: API_UI_ReadyTest.testsuite
-        type: com.ibm.rational.test.lt.scenario
-        version: 11.0.6.0
-        properties: 
-          description: 'Test(s): 
-
-	Dining_Compound
-
-'
-          name: API_UI_ReadyTest
-          type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
-          uid: A1EC8E6947F5E3D0F5D8B46531386263
-        dependencies: 
-          - path: /DemoAPI/Custom/TELEMEDICINA_ENV.ghe
-            type: scheduleDependencies
-          - path: '/DemoAPI/Logical/EmeraldAPIs.scm/React Store.scm/GET Top Categories.opr/GET Top Categories.tsq'
-            type: scheduleInvokedTest
-          - path: /Emerald-UI-Tests/Emerald/Dining_Compound.testsuite
-            type: scheduleInvokedTest
       - name: 'Add Item to basket-add.recdata'
       - name: 'Add Item to basket-add.recsession'
         type: com.ibm.rational.test.lt.recsession
@@ -521,18 +204,6 @@ resources:
         dependencies: 
           - path: /Emerald-UI-Tests/Emerald/Dining_Compound.recdata
             type: recsessionRecdata
-      - name: Dining_Compound.testsuite
-        type: com.ibm.rational.test.lt.test
-        version: 11.0.6.0
-        properties: 
-          features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
-          type: com.ibm.rational.test.lt.lttest
-          uid: A1F0AF547F0A9900E37FB33736653861
-        dependencies: 
-          - path: /BeforeDemo/ng_instance_166.ma
-            type: test#moeb.applicationPackage
-          - path: /Emerald-UI-Tests/Emerald/Dining_Compound.recsession
-            type: testRecsession
       - name: 'Login Add Item & Checkout.testsuite'
         type: com.ibm.rational.test.lt.scenario
         version: 11.0.6.0
@@ -627,52 +298,12 @@ resources:
           - path: /Emerald-UI-Tests/Emerald/Users_Set2.csv.metadata
             type: datasetMetadata
       - name: Users_Set2.csv.metadata
-  - name: Regression.testsuite
-    type: com.ibm.rational.test.lt.scenario
-    version: 11.0.6.0
-    properties: 
-      description: 'Test(s): 
-
-'
-      name: Regression
-      type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
-      uid: A1EE888952C2A890C903E13431663733
   - name: S4D_Me21n.recdata
   - name: S4D_Me21n.recsession
     type: com.ibm.rational.test.lt.recsession
     dependencies: 
       - path: /Emerald-UI-Tests/S4D_Me21n.recdata
         type: recsessionRecdata
-  - name: S4D_Me21n_1750750975173.stats
-    type: com.ibm.rational.test.lt.stats.session
-    properties: 
-      startTime: 1750750975173
-      tags: 
-      testId: A1F050CE7F0B2FD0E99AB53835343531
-      testName: S4D_Me21n
-    dependencies: 
-      - path: /Emerald-UI-Tests/S4D_Me21n_1750750975173.xmoebreport
-        type: statsSessionAsset
-      - path: /Emerald-UI-Tests/S4D_Me21n_1750750975173_orch!system.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/S4D_Me21n_1750750975173_orch!system.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/S4D_Me21n_1750750975173_perf!localhost.mstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/S4D_Me21n_1750750975173_perf!localhost.rstats
-        type: statsSessionStore
-      - path: /Emerald-UI-Tests/S4D_Me21n_1750750986586.executiondlr
-        type: statsSessionAsset
-      - path: /SAP/S4D_Me21n.testsuite
-        type: statsSessionTest
-  - name: S4D_Me21n_1750750975173.xmoebreport
-  - name: S4D_Me21n_1750750975173_orch!system.mstats
-  - name: S4D_Me21n_1750750975173_orch!system.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: S4D_Me21n_1750750975173_perf!localhost.mstats
-  - name: S4D_Me21n_1750750975173_perf!localhost.rstats
-    type: com.ibm.rational.test.lt.stats.raw
-  - name: S4D_Me21n_1750750986586.executiondlr
   - name: Sched_Test_1702979654267.htm
     type: com.ibm.rational.test.lt.html
   - name: SearchBath.recdata
