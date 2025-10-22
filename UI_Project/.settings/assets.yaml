@@ -2,6 +2,7 @@ name: UI_Project
 version: 2
 projectReferences: 
   - /BeforeDemo
+  - /DemoAPI
   - /Emerald-UI-Tests
   - /RFT_Project
 resources: 
@@ -32,18 +33,22 @@ resources:
     type: moeb.applicationPackage
   - name: CP_ApiWeb.testsuite
     type: com.ibm.rational.test.lt.scenario
-    version: 11.0.5.0
+    version: 11.0.6.0
     properties: 
       description: 'Test(s): 
 
-	DiningFromApi
+	Dining_Compound
 
 '
       name: CP_ApiWeb
       type: com.ibm.rational.test.common.schedule.ScenarioTestsuite
       uid: A1EFCD0BD3E6FE40D4BAB06530363233
     dependencies: 
-      - path: /UI_Project/DiningFromApi.testsuite
+      - path: '/DemoAPI/Custom/Commerce React Store PUBLIC.ghe'
+        type: scheduleDependencies
+      - path: '/DemoAPI/Logical/EmeraldAPIs.scm/React Store.scm/GET Top Categories.opr/GET Top Categories.tsq'
+        type: scheduleInvokedTest
+      - path: /Emerald-UI-Tests/Emerald/Dining_Compound.testsuite
         type: scheduleInvokedTest
   - name: CP_ApiWeb_1761141515919.stats
     type: com.ibm.rational.test.lt.stats.session
