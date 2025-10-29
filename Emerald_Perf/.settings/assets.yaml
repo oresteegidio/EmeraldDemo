@@ -1,6 +1,7 @@
 name: Emerald_Perf
 version: 2
 projectReferences: 
+  - /BeforeDemo
   - /Emerald-UI-Tests
 resources: 
   - name: .classpath
@@ -279,6 +280,84 @@ resources:
     dependencies: 
       - path: /Emerald_Perf/PF_BuyBedAsGuest.recsession
         type: testRecsession
+  - name: Poste.recdata
+  - name: Poste.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /Emerald_Perf/Poste.recdata
+        type: recsessionRecdata
+  - name: Poste.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.6.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F0AF6286524600E37FB33736653861
+    dependencies: 
+      - path: /BeforeDemo/ng_instance_166.ma
+        type: test#moeb.applicationPackage
+      - path: /Emerald_Perf/Poste.recsession
+        type: testRecsession
+  - name: Poste_1761150086142.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1761150086142
+      tags: 
+      testId: A1F0AF6286524600E37FB33736653861
+      testName: Poste
+    dependencies: 
+      - path: /Emerald_Perf/Poste.testsuite
+        type: statsSessionTest
+      - path: /Emerald_Perf/Poste_1761150086142.xmoebreport
+        type: statsSessionAsset
+      - path: /Emerald_Perf/Poste_1761150086142_orch!system.mstats
+        type: statsSessionStore
+      - path: /Emerald_Perf/Poste_1761150086142_orch!system.rstats
+        type: statsSessionStore
+      - path: /Emerald_Perf/Poste_1761150086142_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Emerald_Perf/Poste_1761150086142_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Emerald_Perf/Poste_1761150097572.executiondlr
+        type: statsSessionAsset
+  - name: Poste_1761150086142.xmoebreport
+  - name: Poste_1761150086142_orch!system.mstats
+  - name: Poste_1761150086142_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Poste_1761150086142_perf!localhost.mstats
+  - name: Poste_1761150086142_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Poste_1761150097572.executiondlr
+  - name: Poste_1761151119987.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1761151119987
+      tags: 
+      testId: A1F0AF6286524600E37FB33736653861
+      testName: Poste
+    dependencies: 
+      - path: /Emerald_Perf/Poste.testsuite
+        type: statsSessionTest
+      - path: /Emerald_Perf/Poste_1761151119987.xmoebreport
+        type: statsSessionAsset
+      - path: /Emerald_Perf/Poste_1761151119987_orch!system.mstats
+        type: statsSessionStore
+      - path: /Emerald_Perf/Poste_1761151119987_orch!system.rstats
+        type: statsSessionStore
+      - path: /Emerald_Perf/Poste_1761151119987_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /Emerald_Perf/Poste_1761151119987_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /Emerald_Perf/Poste_1761151131363.executiondlr
+        type: statsSessionAsset
+  - name: Poste_1761151119987.xmoebreport
+  - name: Poste_1761151119987_orch!system.mstats
+  - name: Poste_1761151119987_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Poste_1761151119987_perf!localhost.mstats
+  - name: Poste_1761151119987_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: Poste_1761151131363.executiondlr
   - name: RuleChange.dcrules
     type: com.ibm.rational.test.lt.dcrules
     version: 8.2.1-7
@@ -359,4 +438,6 @@ sell: Group Size 30.0 percent
       - name: test
         resources: 
           - name: Bath_Search_Test_A1F0AE7038468040E49EB33239313261.java
+            type: com.ibm.rational.test.lt.generatedCode
+          - name: Poste_Test_A1F0AF6286524600E37FB33736653861.java
             type: com.ibm.rational.test.lt.generatedCode
