@@ -29,6 +29,54 @@ resources:
         type: test#moeb.applicationPackage
       - path: /UI_Project/20250408_Poste.recsession
         type: testRecsession
+  - name: 20251118_Test.recdata
+  - name: 20251118_Test.recsession
+    type: com.ibm.rational.test.lt.recsession
+    dependencies: 
+      - path: /UI_Project/20251118_Test.recdata
+        type: recsessionRecdata
+  - name: 20251118_Test.testsuite
+    type: com.ibm.rational.test.lt.test
+    version: 11.0.6.0
+    properties: 
+      features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+      type: com.ibm.rational.test.lt.lttest
+      uid: A1F0C4538D3E37C0E98DE33733353262
+    dependencies: 
+      - path: /BeforeDemo/ng_instance_166.ma
+        type: test#moeb.applicationPackage
+      - path: /UI_Project/20251118_Test.recsession
+        type: testRecsession
+  - name: 20251118_Test_1763453147248.stats
+    type: com.ibm.rational.test.lt.stats.session
+    properties: 
+      startTime: 1763453147248
+      tags: 
+      testId: A1F0C4538D3E37C0E98DE33733353262
+      testName: 20251118_Test
+    dependencies: 
+      - path: /UI_Project/20251118_Test.testsuite
+        type: statsSessionTest
+      - path: /UI_Project/20251118_Test_1763453147248.xmoebreport
+        type: statsSessionAsset
+      - path: /UI_Project/20251118_Test_1763453147248_orch!system.mstats
+        type: statsSessionStore
+      - path: /UI_Project/20251118_Test_1763453147248_orch!system.rstats
+        type: statsSessionStore
+      - path: /UI_Project/20251118_Test_1763453147248_perf!localhost.mstats
+        type: statsSessionStore
+      - path: /UI_Project/20251118_Test_1763453147248_perf!localhost.rstats
+        type: statsSessionStore
+      - path: /UI_Project/20251118_Test_1763453160601.executiondlr
+        type: statsSessionAsset
+  - name: 20251118_Test_1763453147248.xmoebreport
+  - name: 20251118_Test_1763453147248_orch!system.mstats
+  - name: 20251118_Test_1763453147248_orch!system.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: 20251118_Test_1763453147248_perf!localhost.mstats
+  - name: 20251118_Test_1763453147248_perf!localhost.rstats
+    type: com.ibm.rational.test.lt.stats.raw
+  - name: 20251118_Test_1763453160601.executiondlr
   - name: 58_ddns_net_6d4.ma
     type: moeb.applicationPackage
   - name: CP_ApiWeb.testsuite
@@ -1383,6 +1431,8 @@ resources:
     resources: 
       - name: test
         resources: 
+          - name: C20251118_Test_Test_A1F0C4538D3E37C0E98DE33733353262.java
+            type: com.ibm.rational.test.lt.generatedCode
           - name: CP_ApiWeb_CompoundTest_A1EFCD0BD3E6FE40D4BAB06530363233.java
             type: com.ibm.rational.test.lt.generatedCode
           - name: DiningFromApi_Test_A1EFCCE3EE6CE090E16BB33235363262.java
